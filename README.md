@@ -1,4 +1,6 @@
 
+[toc]
+
 # 技术栈
 
 - 数据库：Mysql
@@ -144,7 +146,7 @@ styletang/rocketmq-console-ng
 
 参照官网：https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html
 
-
+控制台：http://localhost:8848/nacos
 
 
 
