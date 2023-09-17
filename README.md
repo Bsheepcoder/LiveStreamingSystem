@@ -145,6 +145,24 @@ styletang/rocketmq-console-ng
 
 参照官网：https://nacos.io/zh-cn/docs/v2/quickstart/quick-start.html
 
+需要先下载到本地，如果是源码还需要编译，可以直接下编译后的版本
+
+Linux/Unix/Mac
+启动命令(standalone代表着单机模式运行，非集群模式):
+```shell
+sh startup.sh -m standalone
+```
+如果您使用的是ubuntu系统，或者运行脚本报错提示[[符号找不到，可尝试如下运行：
+```shell
+bash startup.sh -m standalone
+```
+
+Windows
+启动命令(standalone代表着单机模式运行，非集群模式):
+```shell
+startup.cmd -m standalone
+```
+
 控制台：http://localhost:8848/nacos
 
 

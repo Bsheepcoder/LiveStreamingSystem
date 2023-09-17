@@ -8,8 +8,9 @@
   <url>http://maven.apache.org</url>
 
   <modules>
-    <module>qiyi-live-user-interface</module>
+    <module>qiyu-live-user-interface</module>
     <module>qiyu-live-user-provider</module>
+    <module>qiyu-live-api</module>
   </modules>
 
   <packaging>pom</packaging>

@@ -17,7 +17,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class UserProviderApplication {
     public static void main(String[] args) {
         SpringApplication springBootApplication = new SpringApplication(UserProviderApplication.class);
-        springBootApplication.setWebApplicationType(WebApplicationType.NONE);
+        springBootApplication.setWebApplicationType(WebApplicationType.NONE);  //创建一个不涉及 Web 应用程序的 Spring Boot 应用程序
         springBootApplication.run(args);
     }
 }

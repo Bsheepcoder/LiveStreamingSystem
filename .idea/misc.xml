@@ -7,11 +7,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/qiyu-live-user-provide/pom.xml" />
         <option value="$PROJECT_DIR$/qiyu-live-user-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/qiyi-live-user-interface/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/qiyu-live-user-interface/pom.xml" />
         <option value="$PROJECT_DIR$/qiyu-live-user-provide/pom.xml" />
       </set>
     </option>
