@@ -3,8 +3,8 @@ spring:
     name: qiyu-live-api
     cloud:
     nacos:
-    username: nacos
-    password: Casit.nacos
+    username: ${nacos.nacos}
+    password: ${nacos.password}
     discovery:
-    server-addr: localhost:8848
-    namespace: qiyu-live-test
+    server-addr: ${nacos.url}:8848
+    namespace: ${nacos.namespace}
