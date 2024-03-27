@@ -12,6 +12,7 @@
     <module>qiyu-live-user-provider</module>
     <module>qiyu-live-api</module>
     <module>qiyu-live-common-interface</module>
+      <module>qiyu-live-framework</module>
   </modules>
 
   <packaging>pom</packaging>
