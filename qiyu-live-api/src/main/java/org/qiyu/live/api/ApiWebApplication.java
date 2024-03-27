@@ -13,6 +13,5 @@ public class ApiWebApplication {
         SpringApplication springApplication = new SpringApplication(ApiWebApplication.class);
         springApplication.setWebApplicationType(WebApplicationType.SERVLET); //创建一个基于 Servlet 的 Spring Boot Web 应用程序
         springApplication.run(args);
-
     }
 }

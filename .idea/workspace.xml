@@ -4,16 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d86a084-0ea6-498c-b716-49f574bce43f" name="更改" comment="添加api模块">
-      <change afterPath="$PROJECT_DIR$/qiyu-live-api/src/main/java/org/qiyu/live/api/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qiyu-live-api/src/main/resources/ bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qiyu-live-api/src/main/resources/dubbo.properties" afterDir="false" />
+    <list default="true" id="5d86a084-0ea6-498c-b716-49f574bce43f" name="更改" comment="bootstrap配置修改">
+      <change afterPath="$PROJECT_DIR$/qiyu-live-api/src/main/java/org/qiyu/live/api/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-common-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-common-interface/src/main/java/org/qiyu/live/common/interfaces/ConvertBeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-common-interface/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-common-interface/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-common-interface/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-common-interface/src/main/resources/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-interface/note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-interface/src/main/java/org/qiyu/live/user/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-provider/note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/java/org/qiyu/live/user/provider/dao/mapper/IUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/java/org/qiyu/live/user/provider/dao/po/UserPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/java/org/qiyu/live/user/provider/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/java/org/qiyu/live/user/provider/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/resources/qiyu-db-sharding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/test/java/dubbo/DubboTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qiyu-live-api/src/main/java/org/qiyu/live/api/ApiWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiyu-live-api/src/main/java/org/qiyu/live/api/ApiWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiyu-live-api/src/main/java/org/qiyu/live/api/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiyu-live-api/src/main/resources/ bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/qiyu-live-api/src/main/resources/ bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiyu-live-api/src/main/resources/dubbo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/qiyu-live-api/src/main/resources/dubbo.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiyu-live-user-interface/src/main/java/org/qiyu/live/user/interfaces/IUserRpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiyu-live-user-interface/src/main/java/org/qiyu/live/user/interfaces/IUserRpc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qiyu-live-user-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/qiyu-live-user-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/java/org/qiyu/live/user/provider/UserProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/java/org/qiyu/live/user/provider/UserProviderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/java/org/qiyu/live/user/provider/rpc/UserRpcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/java/org/qiyu/live/user/provider/rpc/UserRpcImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/resources/ bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/resources/ bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/resources/dubbo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/qiyu-live-user-provider/src/main/resources/dubbo.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,16 +53,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2UOTbTMuyVxd6GgWyhGUnN7x7vk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,33 +72,46 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven.qiyu-live-app [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ApiWebApplication.executor": "Run",
+    "Spring Boot.UserProviderApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/JAVA_Item/qiyu-live-app/qiyu-live-api/src/main/resources",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/JAVA_Item/qiyu-live-app/qiyu-live-user-provider/src/main/java/org/qiyu/live/user/provider",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "问题",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.15172414",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "9738d1ea5c639b75782e460cd3bf3f1a",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JAVA_Item\qiyu-live-app\qiyu-live-user-provider\src\main\java\org\qiyu\live\user\provider" />
+      <recent name="E:\JAVA_Item\qiyu-live-app\qiyu-live-user-provider\src\main\java\org\qiyu\live\user\provider\dao" />
+      <recent name="E:\JAVA_Item\qiyu-live-app\qiyu-live-user-provider\src\main\resources" />
+      <recent name="E:\JAVA_Item\qiyu-live-app\qiyu-live-common-interface\src\main\resources" />
       <recent name="E:\JAVA_Item\qiyu-live-app\qiyu-live-api\src\main\resources" />
-      <recent name="E:\JAVA_Item\qiyu-live-app\qiyu-live-user-interface\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.qiyu.live.user.dto" />
+      <recent name="org.qiyu.live.common.interfaces" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -87,7 +121,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.UserProviderApplication">
+    <configuration name="ApiWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="qiyu-live-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.qiyu.live.api.ApiWebApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.qiyu.live.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="qiyu-live-user-provider" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.qiyu.live.user.provider.UserProviderApplication" />
@@ -104,8 +151,16 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.UserProviderApplication" />
+        <item itemvalue="Spring Boot.ApiWebApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,7 +174,16 @@
       <workItem from="1692860792640" duration="1049000" />
       <workItem from="1693820668482" duration="634000" />
       <workItem from="1694962981940" duration="362000" />
-      <workItem from="1694969856083" duration="18612000" />
+      <workItem from="1694969856083" duration="19191000" />
+      <workItem from="1695010783647" duration="121000" />
+      <workItem from="1695136060225" duration="40000" />
+      <workItem from="1701782146767" duration="188000" />
+      <workItem from="1701782383867" duration="3630000" />
+      <workItem from="1701786299816" duration="234000" />
+      <workItem from="1701786593412" duration="751000" />
+      <workItem from="1702032820360" duration="95000" />
+      <workItem from="1702099201144" duration="84000" />
+      <workItem from="1711551292787" duration="7786000" />
     </task>
     <task id="LOCAL-00001" summary="maven骨架搭建">
       <created>1694963201903</created>
@@ -163,19 +227,39 @@
       <option name="project" value="LOCAL" />
       <updated>1694989465735</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="bootstrap配置修改">
+      <created>1694991359241</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694991359241</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="maven骨架搭建" />
     <MESSAGE value="环境搭建内容完善，包含Docker以及本地化安装的配置的方法和解决" />
     <MESSAGE value="增加目录" />
     <MESSAGE value="骨架搭建修改，解决pom依赖失效的问题" />
     <MESSAGE value="dubbo接口编写" />
     <MESSAGE value="添加api模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加api模块" />
+    <MESSAGE value="bootstrap配置修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="bootstrap配置修改" />
   </component>
 </project>

@@ -7,10 +7,10 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-
-/*
-*   @Description 用户中台dubbo服务提供者
-* */
+/**
+ *
+ * @Description 用户中台dubbo服务提供者
+ */
 @SpringBootApplication
 @EnableDubbo
 @EnableDiscoveryClient

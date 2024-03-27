@@ -1,9 +1,13 @@
-package org.qiyu.live.user.interfaces;
-
+package org.qiyu.live.user.provider.service;
 
 import org.qiyu.live.user.dto.UserDTO;
 
-public interface IUserRpc {
+/**
+ * @Author idea
+ * @Date: Created in 16:40 2023/5/12
+ * @Description
+ */
+public interface IUserService {
 
     /**
      * 根据用户id进行查询
@@ -12,7 +16,6 @@ public interface IUserRpc {
      * @return
      */
     UserDTO getByUserId(Long userId);
-
 
     /**
      * 用户信息更新

@@ -85,7 +85,7 @@ docker pull rocketmqinc/rocketmq
   ```shell
   docker run -d -p 9876:9876 -v D:/docker/mq/other/tmp/data/namesrv/logs:/root/logs -v D:/docker/mq/other/tmp/data/namesrv/store:/root/store --name rmqnamesrv -e "MAX_POSSIBLE_HEAP=100000000" rocketmqinc/rocketmq sh mqnamesrv
   ```
-启动broker
+  启动broker
 
 在windows中的shell换行是`^`,linux的是 `\ `,但是测试了一下windows没Linux兼容的好，故下面都用`\ `.
 ```shell
@@ -139,7 +139,7 @@ styletang/rocketmq-console-ng
    "JAVA_OPTS=-Drocketmq.namesrv.addr=[宿主IP]:9876 \
    -Dcom.rocketmq.sendMessageWithVIPChannel=false -Duser.timezone='Asia/Shanghai'" \
    -v /etc/localtime:/etc/localtime -p 9999:8080 -t styletang/rocketmq-console-ng
-    ```
+   ```
 
 ## 5. Nacos 安装
 
@@ -165,8 +165,82 @@ startup.cmd -m standalone
 
 控制台：http://localhost:8848/nacos
 
+# 数据准备
 
+创建用户数据库
 
+```sql
+CREATE DATABASE qiyu_live_user CHARACTER set utf8mb3 COLLATE=utf8_bin;
+```
+
+创建一百张分表的脚本
+
+```sql
+DELIMITER $$
+
+CREATE
+ PROCEDURE qiyu_live_user.create_t_user_100()
+ BEGIN
+
+ DECLARE i INT;
+ DECLARE table_name VARCHAR(30);
+ DECLARE table_pre VARCHAR(30);
+ DECLARE sql_text VARCHAR(3000);
+ DECLARE table_body VARCHAR(2000);
+ SET i=0;
+ SET table_name='';
+
+ SET sql_text='';
+ SET table_body = '(
+ user_id bigint NOT NULL DEFAULT -1 COMMENT \'用户 id\',
+ nick_name varchar(35) DEFAULT NULL COMMENT \'昵称\',
+ avatar varchar(255) DEFAULT NULL COMMENT \'头像\',
+ true_name varchar(20) DEFAULT NULL COMMENT \'真实姓名\',
+ sex tinyint(1) DEFAULT NULL COMMENT \'性别 0 男，1 女\',
+ born_date datetime DEFAULT NULL COMMENT \'出生时间\',
+ work_city int(9) DEFAULT NULL COMMENT \'工作地\',
+ born_city int(9) DEFAULT NULL COMMENT \'出生地\',
+ create_time datetime DEFAULT CURRENT_TIMESTAMP,
+ update_time datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+ CURRENT_TIMESTAMP,
+ PRIMARY KEY (user_id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3
+COLLATE=utf8_bin;';
+ WHILE i<100 DO
+ IF i<10 THEN
+ SET table_name = CONCAT('t_user_0',i);
+ ELSE
+ SET table_name = CONCAT('t_user_',i);
+ END IF;
+
+ SET sql_text=CONCAT('CREATE TABLE ',table_name,
+table_body);
+ SELECT sql_text;
+ SET @sql_text=sql_text;
+ PREPARE stmt FROM @sql_text;
+ EXECUTE stmt;
+ DEALLOCATE PREPARE stmt;
+ SET i=i+1;
+ END WHILE;
+
+ END$$
+
+DELIMITER ;
+```
+
+查询数据库表的容量情况
+
+```sql
+select
+    table_schema as '数据库',
+    table_name as '表名',
+    table_rows as '记录数',
+    truncate(data_length/1024/1024,2) as '数据容量(MB)',
+    truncate(index_length/1024/1024,2) as '索引容量(MB)'
+from information_schema.TABLES
+where table_schema='qiyu_live_user'
+order by data_length desc , index_length desc ;
+```
 
 
 
